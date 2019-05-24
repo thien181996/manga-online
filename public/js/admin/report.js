@@ -95,7 +95,7 @@ var DatatableRecordSelection = function () {
                         return $(e).val()
                     }), n = document.createDocumentFragment(), l = 0; l < a.length; l++) {
                         var i = document.createElement("li");
-                        i.setAttribute("data-id", a[l]), i.innerHTML = "Selected record ID: " + a[l],
+                        i.setAttribute("data-id", a[l]), i.innerHTML = a[l],
                             n.appendChild(i)
                     }
                     $(t.target).find(".m_datatable_selected_ids").append(n)
